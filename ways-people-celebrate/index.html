@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="en-CA">
 <head>
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -47,9 +47,17 @@ h1:where(.wp-block-heading).has-background,h2:where(.wp-block-heading).has-backg
 .wp-block-post-date{box-sizing:border-box}
 /*# sourceURL=/wp-includes/blocks/post-date/style.min.css */
 </style>
+<style id='wp-block-post-featured-image-inline-css'>
+.wp-block-post-featured-image{margin-left:0;margin-right:0}.wp-block-post-featured-image a{display:block;height:100%}.wp-block-post-featured-image :where(img){box-sizing:border-box;height:auto;max-width:100%;vertical-align:bottom;width:100%}.wp-block-post-featured-image.alignfull img,.wp-block-post-featured-image.alignwide img{width:100%}.wp-block-post-featured-image .wp-block-post-featured-image__overlay.has-background-dim{background-color:#000;inset:0;position:absolute}.wp-block-post-featured-image{position:relative}.wp-block-post-featured-image .wp-block-post-featured-image__overlay.has-background-gradient{background-color:initial}.wp-block-post-featured-image .wp-block-post-featured-image__overlay.has-background-dim-0{opacity:0}.wp-block-post-featured-image .wp-block-post-featured-image__overlay.has-background-dim-10{opacity:.1}.wp-block-post-featured-image .wp-block-post-featured-image__overlay.has-background-dim-20{opacity:.2}.wp-block-post-featured-image .wp-block-post-featured-image__overlay.has-background-dim-30{opacity:.3}.wp-block-post-featured-image .wp-block-post-featured-image__overlay.has-background-dim-40{opacity:.4}.wp-block-post-featured-image .wp-block-post-featured-image__overlay.has-background-dim-50{opacity:.5}.wp-block-post-featured-image .wp-block-post-featured-image__overlay.has-background-dim-60{opacity:.6}.wp-block-post-featured-image .wp-block-post-featured-image__overlay.has-background-dim-70{opacity:.7}.wp-block-post-featured-image .wp-block-post-featured-image__overlay.has-background-dim-80{opacity:.8}.wp-block-post-featured-image .wp-block-post-featured-image__overlay.has-background-dim-90{opacity:.9}.wp-block-post-featured-image .wp-block-post-featured-image__overlay.has-background-dim-100{opacity:1}.wp-block-post-featured-image:where(.alignleft,.alignright){width:100%}
+/*# sourceURL=/wp-includes/blocks/post-featured-image/style.min.css */
+</style>
 <style id='wp-block-post-template-inline-css'>
 .wp-block-post-template{box-sizing:border-box;list-style:none;margin-bottom:0;margin-top:0;max-width:100%;padding:0}.wp-block-post-template.is-flex-container{display:flex;flex-direction:row;flex-wrap:wrap;gap:1.25em}.wp-block-post-template.is-flex-container>li{margin:0;width:100%}@media (min-width:600px){.wp-block-post-template.is-flex-container.is-flex-container.columns-2>li{width:calc(50% - .625em)}.wp-block-post-template.is-flex-container.is-flex-container.columns-3>li{width:calc(33.33333% - .83333em)}.wp-block-post-template.is-flex-container.is-flex-container.columns-4>li{width:calc(25% - .9375em)}.wp-block-post-template.is-flex-container.is-flex-container.columns-5>li{width:calc(20% - 1em)}.wp-block-post-template.is-flex-container.is-flex-container.columns-6>li{width:calc(16.66667% - 1.04167em)}}@media (max-width:600px){.wp-block-post-template-is-layout-grid.wp-block-post-template-is-layout-grid.wp-block-post-template-is-layout-grid.wp-block-post-template-is-layout-grid{grid-template-columns:1fr}}.wp-block-post-template-is-layout-constrained>li>.alignright,.wp-block-post-template-is-layout-flow>li>.alignright{float:right;margin-inline-end:0;margin-inline-start:2em}.wp-block-post-template-is-layout-constrained>li>.alignleft,.wp-block-post-template-is-layout-flow>li>.alignleft{float:left;margin-inline-end:2em;margin-inline-start:0}.wp-block-post-template-is-layout-constrained>li>.aligncenter,.wp-block-post-template-is-layout-flow>li>.aligncenter{margin-inline-end:auto;margin-inline-start:auto}
 /*# sourceURL=/wp-includes/blocks/post-template/style.min.css */
+</style>
+<style id='wp-block-site-tagline-inline-css'>
+.wp-block-site-tagline{box-sizing:border-box}
+/*# sourceURL=/wp-includes/blocks/site-tagline/style.min.css */
 </style>
 <style id='wp-block-spacer-inline-css'>
 .wp-block-spacer{clear:both}
@@ -90,6 +98,7 @@ h1:where(.wp-block-heading).has-background,h2:where(.wp-block-heading).has-backg
 :root :where(.wp-block-post-date a:where(:not(.wp-element-button)):hover){text-decoration: underline;}
 :root :where(.wp-block-post-title a:where(:not(.wp-element-button))){text-decoration: none;}
 :root :where(.wp-block-post-title a:where(:not(.wp-element-button)):hover){text-decoration: underline;}
+:root :where(.wp-block-site-tagline){font-size: var(--wp--preset--font-size--medium);}
 :root :where(.wp-block-site-title){font-weight: 700;letter-spacing: -.5px;}
 :root :where(.wp-block-site-title a:where(:not(.wp-element-button))){text-decoration: none;}
 :root :where(.wp-block-site-title a:where(:not(.wp-element-button)):hover){text-decoration: underline;}
@@ -209,15 +218,38 @@ a{text-decoration-thickness:1px!important;text-underline-offset:.1em}:where(.wp-
 
 	
 <div class="wp-block-query alignfull is-layout-flow wp-block-query-is-layout-flow">
-	<ul class="alignfull wp-block-post-template is-layout-flow wp-block-post-template-is-layout-flow"><li class="wp-block-post post-1 post type-post status-publish format-standard hentry category-uncategorized">
+	<ul class="alignfull wp-block-post-template is-layout-flow wp-block-post-template-is-layout-flow"><li class="wp-block-post post-26 post type-post status-publish format-standard hentry category-uncategorized">
 		
 		<div class="wp-block-group alignfull has-global-padding is-layout-constrained wp-block-group-is-layout-constrained" style="padding-top:var(--wp--preset--spacing--60);padding-bottom:var(--wp--preset--spacing--60)">
 			
-			<h2 class="wp-block-post-title has-x-large-font-size"><a href="/hello-world/" target="_self" >Hello world!</a></h2>
+			<h2 class="wp-block-post-title has-x-large-font-size"><a href="/day-3-of-celebrating/" target="_self" >Day 3 of Celebrating</a></h2>
 			<div class="entry-content alignfull wp-block-post-content has-medium-font-size has-global-padding is-layout-constrained wp-block-post-content-is-layout-constrained">
-<p>Welcome to WordPress. This is your first post. Edit or delete it, then start writing!</p>
+<p>Depression. Today I realized that I have school tomorrow.</p>
 </div>
-			<div style="margin-top:var(--wp--preset--spacing--40);" class="wp-block-post-date has-small-font-size"><time datetime="2026-02-03T00:24:47+00:00"><a href="/hello-world/">February 3, 2026</a></time></div>
+			<div style="margin-top:var(--wp--preset--spacing--40);" class="wp-block-post-date has-small-font-size"><time datetime="2026-02-03T06:14:40+05:00"><a href="/day-3-of-celebrating/">February 3, 2026</a></time></div>
+		</div>
+		
+	</li><li class="wp-block-post post-22 post type-post status-publish format-standard has-post-thumbnail hentry category-uncategorized">
+		
+		<div class="wp-block-group alignfull has-global-padding is-layout-constrained wp-block-group-is-layout-constrained" style="padding-top:var(--wp--preset--spacing--60);padding-bottom:var(--wp--preset--spacing--60)">
+			<figure style="aspect-ratio:3/2;" class="wp-block-post-featured-image"><a href="/day-2-of-celebrating/" target="_self"  ><img width="2624" height="3936" src="/wp-content/uploads/2026/02/img-of-hot-coco.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="Day 2 of Celebrating" style="width:100%;height:100%;object-fit:cover;" decoding="async" fetchpriority="high" /></a></figure>
+			<h2 class="wp-block-post-title has-x-large-font-size"><a href="/day-2-of-celebrating/" target="_self" >Day 2 of Celebrating</a></h2>
+			<div class="entry-content alignfull wp-block-post-content has-medium-font-size has-global-padding is-layout-constrained wp-block-post-content-is-layout-constrained">
+<p>With the cold -18 c winter I have huddled at my desk with a blanket and warm cup of hot coco.</p>
+</div>
+			<div style="margin-top:var(--wp--preset--spacing--40);" class="wp-block-post-date has-small-font-size"><time datetime="2026-02-03T06:08:45+05:00"><a href="/day-2-of-celebrating/">February 3, 2026</a></time></div>
+		</div>
+		
+	</li><li class="wp-block-post post-17 post type-post status-publish format-standard has-post-thumbnail hentry category-uncategorized">
+		
+		<div class="wp-block-group alignfull has-global-padding is-layout-constrained wp-block-group-is-layout-constrained" style="padding-top:var(--wp--preset--spacing--60);padding-bottom:var(--wp--preset--spacing--60)">
+			<figure style="aspect-ratio:3/2;" class="wp-block-post-featured-image"><a href="/day-1-of-celebrating/" target="_self"  ><img width="1280" height="720" src="/wp-content/uploads/2026/02/cozy-bedroom.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="Day 1 of Celebrating" style="width:100%;height:100%;object-fit:cover;" decoding="async" /></a></figure>
+			<h2 class="wp-block-post-title has-x-large-font-size"><a href="/day-1-of-celebrating/" target="_self" >Day 1 of Celebrating</a></h2>
+			<div class="entry-content alignfull wp-block-post-content has-medium-font-size has-global-padding is-layout-constrained wp-block-post-content-is-layout-constrained"><p>Today I celebrated by relaxing all day sleeping in my bed until 2 pm. I then decided to bake some pre-preped chicken drum sticks I my mom made. While it was baking I put a cup of rice in to the rice cooker.<br />
+For plating I placed some baby spinach on a plate, added the hot rice to on top, and added 4 chicken drum sticks ontop.<br />
+It was delicious.</p>
+</div>
+			<div style="margin-top:var(--wp--preset--spacing--40);" class="wp-block-post-date has-small-font-size"><time datetime="2026-02-03T05:55:35+05:00"><a href="/day-1-of-celebrating/">February 3, 2026</a></time></div>
 		</div>
 		
 	</li></ul>
@@ -250,7 +282,7 @@ a{text-decoration-thickness:1px!important;text-underline-offset:.1em}:where(.wp-
 				
 				<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow" style="flex-basis:100%"><h2 class="wp-block-site-title"><a href="/" target="_self" rel="home">Lab 4 My Birthday July 2</a></h2>
 
-				
+				<p class="wp-block-site-tagline">My birthday site</p>
 				</div>
 				
 

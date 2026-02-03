@@ -2,7 +2,17 @@
 <urlset>
     <url>
         <loc>
-            http://localhost:8000/hello-world/
+            http://localhost:8000/day-1-of-celebrating/
+        </loc>
+    </url>
+    <url>
+        <loc>
+            http://localhost:8000/day-2-of-celebrating/
+        </loc>
+    </url>
+    <url>
+        <loc>
+            http://localhost:8000/day-3-of-celebrating/
         </loc>
     </url>
     <url>
